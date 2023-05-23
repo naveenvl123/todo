@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="https://dan.org.in/assets/img/logo-favicon.png" />
+
+    <title>Dan UI | dan.org.in</title>
+
+    <!-- Custom style -->
+    <style>
+        .dan-shape-1 {
+            height: 95vh;
+            display: grid;
+            align-content: center;
+            justify-content: center;
+        }
+
+        .dan-shape-1 #heart {
+            position: relative;
+            width: 100px;
+            height: 90px;
+        }
+
+        #heart:before,
+        #heart:after {
+            position: absolute;
+            content: "";
+            left: 50px;
+            top: 0;
+            width: 50px;
+            height: 80px;
+            background: red;
+            border-radius: 50px 50px 0 0;
+            transform: rotate(-45deg);
+            transform-origin: 0 100%;
+        }
+
+        #heart:after {
+            left: 0;
+            transform: rotate(45deg);
+            transform-origin: 100% 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <section class="dan-shape-1">
+        <div id="heart"></div>
+    </section>
+
+    <!-- Custom script -->
+    <script>
+
+    </script>
+</body>
+
+</html>

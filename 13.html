@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="https://dan.org.in/assets/img/logo-favicon.png" />
+
+    <title>Dan UI | dan.org.in</title>
+
+    <!-- Custom style -->
+    <style>
+        .dan-shape-1 {
+            height: 95vh;
+            display: grid;
+            align-content: center;
+            justify-content: center;
+        }
+
+        .dan-shape-1 #curvedarrow {
+            position: relative;
+            width: 0;
+            height: 0;
+            border-top: 9px solid transparent;
+            border-right: 9px solid red;
+            transform: rotate(10deg);
+        }
+
+        #curvedarrow:after {
+            content: "";
+            position: absolute;
+            border: 0 solid transparent;
+            border-top: 3px solid red;
+            border-radius: 20px 0 0 0;
+            top: -12px;
+            left: -9px;
+            width: 12px;
+            height: 12px;
+            transform: rotate(45deg);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <section class="dan-shape-1">
+        <div id="curvedarrow"></div>
+    </section>
+
+    <!-- Custom script -->
+    <script>
+
+    </script>
+</body>
+
+</html>

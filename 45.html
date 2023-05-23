@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="https://dan.org.in/assets/img/logo-favicon.png" />
+
+    <title>Dan UI | dan.org.in</title>
+
+    <!-- Custom style -->
+    <style>
+        .dan-shape-1 {
+            height: 95vh;
+            display: grid;
+            align-content: center;
+            justify-content: center;
+        }
+
+        .dan-shape-1 #curved-corner-bottomleft,
+        #curved-corner-bottomright,
+        #curved-corner-topleft,
+        #curved-corner-topright {
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #curved-corner-bottomleft:before,
+        #curved-corner-bottomright:before,
+        #curved-corner-topleft:before,
+        #curved-corner-topright:before {
+            content: "";
+            display: block;
+            width: 200%;
+            height: 200%;
+            position: absolute;
+            border-radius: 50%;
+        }
+
+        #curved-corner-bottomleft:before {
+            bottom: 0;
+            left: 0;
+            box-shadow: -50px 50px 0 0 red;
+        }
+
+        #curved-corner-bottomright:before {
+            bottom: 0;
+            right: 0;
+            box-shadow: 50px 50px 0 0 red;
+        }
+
+        #curved-corner-topleft:before {
+            top: 0;
+            left: 0;
+            box-shadow: -50px -50px 0 0 red;
+        }
+
+        #curved-corner-topright:before {
+            top: 0;
+            right: 0;
+            box-shadow: 50px -50px 0 0 red;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <section class="dan-shape-1">
+        <div id="curved-corner-bottomleft"></div>
+        <div id="curved-corner-bottomright"></div>
+        <div id="curved-corner-topleft"></div>
+        <div id="curved-corner-topright"></div>
+    </section>
+
+    <!-- Custom script -->
+    <script>
+
+    </script>
+</body>
+
+</html>

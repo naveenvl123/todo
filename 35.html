@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="https://dan.org.in/assets/img/logo-favicon.png" />
+
+    <title>Dan UI | dan.org.in</title>
+
+    <!-- Custom style -->
+    <style>
+        .dan-shape-1 {
+            height: 95vh;
+            display: grid;
+            align-content: center;
+            justify-content: center;
+        }
+
+        .dan-shape-1 #chevron {
+            position: relative;
+            text-align: center;
+            padding: 12px;
+            margin-bottom: 6px;
+            height: 60px;
+            width: 200px;
+        }
+
+        #chevron:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 51%;
+            background: red;
+            transform: skew(0deg, 6deg);
+        }
+
+        #chevron:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 50%;
+            background: red;
+            transform: skew(0deg, -6deg);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <section class="dan-shape-1">
+        <div id="chevron"></div>
+    </section>
+
+    <!-- Custom script -->
+    <script>
+
+    </script>
+</body>
+
+</html>

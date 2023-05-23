@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Dan</title>
+
+  <!-- Bootstrap.4.6.0.css -->
+  <link rel="stylesheet" href="https://drive.google.com/uc?id=1GE5OlsNx1hGvUkvlOsLy7w1DaRtKy-Eg">
+
+  <style>
+    .dan-button-3 {
+      padding: 15px 100px;
+      margin: 10px 4px;
+      color: #000;
+      font-family: sans-serif;
+      text-transform: uppercase;
+      text-align: center;
+      position: relative;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .dan-button-3::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-color: #000;
+      -webkit-transform: scaleX(.3);
+      transform: scaleX(.3);
+      opacity: 0;
+      transition: all .3s
+    }
+
+    .dan-button-3:hover {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .dan-button-3:hover::before {
+      opacity: 1;
+      color: #fff;
+      background-color: #6098FF;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+      transition: -webkit-transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity .4s;
+      transition: transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity
+    }
+  </style>
+</head>
+
+<body>
+  <div class="row pt-5">
+    <div class="col-md-3 text-center m-auto">
+
+      <a href="#" class="dan-button-3"> Button </a>
+
+    </div>
+  </div>
+
+</body>
+
+
+</html>

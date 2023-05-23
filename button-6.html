@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Dan</title>
+
+  <!-- Bootstrap.4.6.0.css -->
+  <link rel="stylesheet" href="https://drive.google.com/uc?id=1GE5OlsNx1hGvUkvlOsLy7w1DaRtKy-Eg">
+
+  <style>
+    .dan-button-6 {
+      padding: 15px 100px;
+      margin: 10px 4px;
+      color: #000;
+      font-family: sans-serif;
+      text-transform: uppercase;
+      text-align: center;
+      position: relative;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .dan-button-6 {
+      border: 1px solid transparent;
+      -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+      transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+    }
+
+    .dan-button-6::before {
+      content: '';
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+      z-index: -1;
+      width: 0%;
+      height: 1px;
+      background: #000000;
+      box-shadow: inset 0px 0px 0px #000000;
+      display: block;
+      -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+      transition: all 0.4s cubic-bezier(.5, .24, 0, 1)
+    }
+
+    .dan-button-6:hover {
+      color: #000000;
+      text-decoration: none;
+    }
+
+    .dan-button-6:hover::before {
+      width: 100%;
+    }
+
+    .dan-button-6::after {
+      content: '';
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      z-index: -1;
+      width: 0%;
+      height: 1px;
+      background: #000000;
+      -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+      transition: all 0.4s cubic-bezier(.5, .24, 0, 1)
+    }
+
+    .dan-button-6:hover::after {
+      width: 100%;
+    }
+
+    .dan-button-6:hover {
+      border-left: 5px solid #000000;
+      border-right: 5px solid #000000;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="row pt-5">
+    <div class="col-md-3 text-center m-auto">
+
+      <a href="#" class="dan-button-6"> Button </a>
+
+    </div>
+  </div>
+
+</body>
+
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Dan</title>
+
+  <!-- Bootstrap.4.6.0.css -->
+  <link rel="stylesheet" href="https://drive.google.com/uc?id=1GE5OlsNx1hGvUkvlOsLy7w1DaRtKy-Eg">
+
+  <style>
+    .dan-button-11 {
+      top: 40px;
+      padding: 20px 90px;
+      margin: 0 10px;
+      display: inline-block;
+      text-decoration: none;
+      font-family: "proxima-nova", sans-serif;
+      font-weight: 500;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #000;
+      cursor: hand;
+      text-align: center;
+      text-transform: capitalize;
+      border-radius: 0px;
+      position: relative;
+      overflow: hidden;
+      -webkit-transition: all .3s ease-in-out;
+      -moz-transition: all .3s ease-in-out;
+      -o-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out;
+      background: transparent;
+    }
+
+    .dan-button-11:hover {
+      border: 1px solid transparent;
+      color: #80ffd3;
+    }
+
+    .dan-button-11::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      display: block;
+      background: #c10daf;
+      position: absolute;
+      left: 0%;
+      opacity: 1;
+      top: 0;
+      z-index: -12;
+      -webkit-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
+      -moz-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
+      -o-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
+      transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
+    }
+
+    .dan-button-11::after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      display: block;
+      background: #80ffd3;
+      position: absolute;
+      left: 0%;
+      opacity: 1;
+      top: 0;
+      z-index: -15;
+      -webkit-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
+      -moz-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
+      -o-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
+      transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
+    }
+
+    .dan-button-11:hover {
+      color: #000000;
+      text-decoration: none;
+    }
+
+    .dan-button-11:hover::before,
+    .dan-button-11:hover::before {
+      opacity: 1;
+      -webkit-transform: translateX(100%);
+      -moz-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+
+    .dan-button-11:hover::after,
+    .dan-button-11:hover::after {
+      opacity: 1;
+      -webkit-transform: translateX(-100%);
+      -moz-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="row pt-5">
+    <div class="col-md-3 text-center m-auto">
+
+      <a href="#" class="dan-button-11"> <span>button</span>
+        <div class="transition"></div>
+      </a>
+
+    </div>
+  </div>
+
+</body>
+
+
+</html>

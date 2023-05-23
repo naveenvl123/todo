@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="https://dan.org.in/assets/img/logo-favicon.png" />
+
+    <title>Dan UI | dan.org.in</title>
+
+    <!-- Custom style -->
+    <style>
+        .dan-shape-1 {
+            height: 95vh;
+            display: grid;
+            align-content: center;
+            justify-content: center;
+        }
+
+        .dan-shape-1 #magnifying-glass {
+            font-size: 10em;
+            display: inline-block;
+            width: 0.4em;
+            box-sizing: content-box;
+            height: 0.4em;
+            border: 0.1em solid red;
+            position: relative;
+            border-radius: 0.35em;
+        }
+
+        #magnifying-glass:before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            right: -0.25em;
+            bottom: -0.1em;
+            border-width: 0;
+            background: red;
+            width: 0.35em;
+            height: 0.08em;
+            transform: rotate(45deg);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <section class="dan-shape-1">
+        <div id="magnifying-glass"></div>
+    </section>
+
+    <!-- Custom script -->
+    <script>
+
+    </script>
+</body>
+
+</html>

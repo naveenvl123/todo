@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="https://dan.org.in/assets/img/logo-favicon.png" />
+
+    <title>Dan UI | dan.org.in</title>
+
+    <!-- Custom style -->
+    <style>
+        .dan-shape-1 {
+            height: 95vh;
+            display: grid;
+            align-content: center;
+            justify-content: center;
+        }
+
+        .dan-shape-1 #star-five {
+            margin: 50px 0;
+            position: relative;
+            display: block;
+            color: red;
+            width: 0px;
+            height: 0px;
+            border-right: 100px solid transparent;
+            border-bottom: 70px solid red;
+            border-left: 100px solid transparent;
+            transform: rotate(35deg);
+        }
+
+        #star-five:before {
+            border-bottom: 80px solid red;
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            position: absolute;
+            height: 0;
+            width: 0;
+            top: -45px;
+            left: -65px;
+            display: block;
+            content: '';
+            transform: rotate(-35deg);
+        }
+
+        #star-five:after {
+            position: absolute;
+            display: block;
+            color: red;
+            top: 3px;
+            left: -105px;
+            width: 0px;
+            height: 0px;
+            border-right: 100px solid transparent;
+            border-bottom: 70px solid red;
+            border-left: 100px solid transparent;
+            transform: rotate(-70deg);
+            content: '';
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <section class="dan-shape-1">
+        <div id="star-five"></div>
+    </section>
+
+    <!-- Custom script -->
+    <script>
+
+    </script>
+</body>
+
+</html>

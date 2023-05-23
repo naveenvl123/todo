@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Dan</title>
+
+  <!-- Bootstrap.4.6.0.css -->
+  <link rel="stylesheet" href="https://drive.google.com/uc?id=1GE5OlsNx1hGvUkvlOsLy7w1DaRtKy-Eg">
+
+  <style>
+    .dan-button-12 {
+      cursor: pointer;
+      background-color: #000;
+      width: 330px;
+      height: 64px;
+      padding: 20px 50px;
+      line-height: 64px;
+      position: relative;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      z-index: 0;
+      background: #9A8A62;
+      margin-left: 20px;
+    }
+
+    .dan-button-12 span {
+      color: rgb(255, 255, 255);
+      display: inline-block;
+      padding-left: 35px;
+      text-transform: uppercase;
+      font: bold 18px/66px Arial;
+      transform: scaleX(0.6);
+      letter-spacing: 3px;
+      transform-origin: center left;
+      transition: color 0.3s ease;
+      position: relative;
+      z-index: 1;
+    }
+
+    .dan-button-12 em {
+      position: absolute;
+      height: 1px;
+      background: rgb(255, 255, 255);
+      width: 47%;
+      right: 23px;
+      top: 50%;
+      transform: scaleX(0.25);
+      -webkit-transform: scaleX(0.25);
+      transform-origin: center right;
+      transition: all 0.3s ease;
+      z-index: 1;
+    }
+
+    .dan-button-12:before,
+    .dan-button-12:after {
+      content: '';
+      background: rgb(255, 255, 255);
+      height: 50%;
+      width: 0;
+      position: absolute;
+      transition: 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      -webkit-transition: 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    }
+
+    .dan-button-12:before {
+      top: 0;
+      left: 0;
+      right: auto;
+    }
+
+    .dan-button-12:after {
+      bottom: 0;
+      right: 0;
+      left: auto;
+    }
+
+    .dan-button-12:hover:before {
+      width: 100%;
+      right: 0;
+      left: auto;
+    }
+
+    .dan-button-12:hover:after {
+      width: 100%;
+      left: 0;
+      right: auto;
+    }
+
+    .dan-button-12:hover span {
+      color: #000;
+    }
+
+    .dan-button-12:hover em {
+      background: #000;
+      transform: scaleX(.51);
+      transform: scaleX(.51);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="row pt-5">
+    <div class="col-md-3 text-center m-auto">
+
+      <a href="#" class="dan-button-12"> <em> </em> <span> Button </span> </a>
+
+    </div>
+  </div>
+
+</body>
+
+
+</html>

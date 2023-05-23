@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+
+<style>
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .item {
+        font-size: 24px;
+        background: tomato;
+        height: 200px;
+        width: 200px;
+        margin: 10px;
+    }
+</style>
+
+<body>
+
+    Filter
+    <a id="designBtn" href="#design">
+        design</a>
+    <a id="illustrationBtn" href="#illustration">
+        illustration</a>
+    <a id="motionBtn" href="#motion">
+        motion</a>
+    <br />
+
+    <div class=" wrapper">
+
+        <div class="item" data-tags="design">
+            design
+        </div>
+
+        <div class="item" data-tags="illustration">
+            illustration
+        </div>
+
+        <div class="item" data-tags="motion">
+            motion
+        </div>
+
+        <div class="item" data-tags="design motion">
+            design motion
+        </div>
+
+        <div class="item" data-tags="illustration design">
+            illustration design
+        </div>
+
+        <div class="item" data-tags="motion illustration">
+            motion illustration
+        </div>
+
+        <div class="item" data-tags="design">
+            design
+        </div>
+
+        <div class="item" data-tags="illustration">
+            illustration
+        </div>
+
+        <div class="item" data-tags="motion design">
+            motion design
+        </div>
+
+    </div>
+
+    <script>
+
+
+        const items = document.getElementsByClassName("item");
+        //window.location.href.includes('design') 
+
+        showTag = (event, tag) => {
+            // console.log(window.location.hash)
+            for (let i = 0; i < items.length; i++) {
+                if (items[i].dataset.tags.includes(tag)) {
+                    items[i].style.display = "block";
+                } else {
+                    items[i].style.display = "none";
+                }
+            }
+        }
+
+        document.getElementById("designBtn").addEventListener("click", (event) => showTag(event, 'design'));
+        document.getElementById("illustrationBtn").addEventListener("click", (event) => showTag(event, 'illustration'));
+        document.getElementById("motionBtn").addEventListener("click", (event) => showTag(event, 'motion'));
+    </script>
+
+
+</body>
+
+</html>
